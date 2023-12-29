@@ -1,0 +1,102 @@
+<html>
+<head>
+    <title>Website Design Using HTML,CSS and JS</title>
+    <link rel = "stylesheet" href = "styleforthis.css">
+
+
+</head>
+<body>
+    <div class = "main">
+        <nav>
+            <div class = "logo">
+                <img src="phonepic.webp">
+            </div>
+            <div class = "nav-links">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Phone</a></li>
+                    <li><a href="">Accesories</a></li>
+                    <li><a href="">Cart</a></li>
+
+
+                </ul>
+
+            </div>
+        </nav>
+        <div class = "information">
+            
+                
+            </div>
+            <img src = "apple-iphone-15-pro-max.webp" class = "mobile">
+            <div id = "circle">
+                <div class = "feature one">
+                    <img src="cam.webp">
+                    <div>
+                        <h1>Camera</h1>
+                        <p>54 MP, 4K UHD</p>
+                    </div>
+                </div>
+                <div class = "feature two">
+                    <img src="processor.webp">
+                    <div>
+                        <h1>Processor</h1>
+                        <p>Snapdragon 956,Perfect Gaming</p>
+                    </div>
+                </div>
+                <div class = "feature three">
+                    <img src="logoai.jpg">
+                    <div>
+                        <h1>AI System</h1>
+                        <p>Intelligent<br>Gives Suggestions</p>
+                    </div>
+                </div>
+                <div class = "feature four">
+                    <img src = "5g.webp">
+                    <div>
+                        <h1>5G Technology</h1>
+                        <p>23 Bands For 5G Easy Access</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "overlay"></div>
+        </div>
+
+        <div class = "controls">    
+            <h2 id = "UpBtn">Click here</h2>
+            <h2>Features</h2>
+            <h2 id = "DownBtn">Click here</h2>
+        </div>
+
+    </div>
+
+    <script>
+        var circle  = document.getElementById("circle");
+        var upBtn = document.getElementById("UpBtn");
+        var downBtn  = document.getElementById("DownBtn");
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+        
+        upBtn.onclick = function()
+        {
+            rotateSum = rotateValue +"rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+
+        }
+        downBtn.onclick = function()
+        {
+            rotateSum = rotateValue +"rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+
+        }
+
+
+
+    </script>
+</body>
+
+
+
+
+</html>
